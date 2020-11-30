@@ -1,4 +1,4 @@
-# Office App Assessment
+# Interview Assessment
 Flask API service that searches public hosting platform repositories. 
 
 ### How to run the service
@@ -20,6 +20,9 @@ curl --request POST \
 	"page_no": 1
 }'
 ```
+
+For the simplicity of this assignment, `Gitlab` is the only provider accepted in the payload. Since Gitlab Search API uses pagination, I also added `page_no` in the payload to get the next page of repositories.
+However to make the call efficient from our end, I specified the total repositories returned per page in the application configurations which is set to 10.
 
 ### How to run the tests suite
 After executing the docker-compose file, we can run the tests suite inside `office-app-search-repos` container.
