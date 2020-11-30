@@ -1,0 +1,4 @@
+Flask==1.1.2
+python-gitlab==2.5.0
+Werkzeug==1.0.1
+uwsgi==2.0.18

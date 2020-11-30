@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  office-app:
+    container_name: office-app-search-repos
+    build:
+      context: .
+    ports:
+      - 5000:5000
+    environment:
+      - FLASK_DEBUG=1
+      - FLASK_APP=/app/repo_search
+      - APP_SETTINGS=repo_search.config.LocalConfig
+      - FLASK_ENV=local
